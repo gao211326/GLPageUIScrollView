@@ -248,8 +248,9 @@ static CGFloat const kTimer = 2.0;
 {
     _endOffsetX = scrollView.contentOffset.x;
     
+    //给imageview赋值
     [self loadImage];
-    
+    //改变offset  
     [_scrollView setContentOffset:CGPointMake(self.bounds.size.width, 0) animated:NO];
     
     if (self.didScrollToIndexBlock)
